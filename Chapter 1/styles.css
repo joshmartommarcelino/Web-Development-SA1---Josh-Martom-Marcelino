@@ -15,15 +15,33 @@ body::before {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    opacity: 0.5; /* Adjust this value between 0 and 1 to control transparency */
+    opacity: 0.5; /* If you adjust this you can control transparency */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Places it behind the content */
+    z-index: -1; /* Places it behind everthing */
 }
-
+/* Background audio player */
+/* Container for the audio player */
+.audio-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+  
+  /* Styling for the background music player */
+  .custom-audio-player {
+    width: 300px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* This centers the background music player */
+  }
 /* Name of the Recipe Styling */
 h1 {
     color: #444;
