@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    postition: relative;
+    position: relative;
 }
 /* Pseudo element to make the background image look translucent */
 body::before {
@@ -21,7 +21,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Places it behind everthing */
+    z-index: -1; /* Places it behind everything */
 }
 /* Background audio player */
 /* Container for the audio player */
