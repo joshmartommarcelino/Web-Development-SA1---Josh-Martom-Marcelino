@@ -1,28 +1,44 @@
-/* General Styling */
+/* General Styling and Background Image */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    postition: relative;
+}
+/* Pseudo element to make the background image look translucent */
+body::before {
+    content: "";
+    background-image: url('Pasta-Carbonara-2-3-scaled-3178421136.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust this value between 0 and 1 to control transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Places it behind the content */
 }
 
-/* Recipe Name Styling */
+/* Name of the Recipe Styling */
 h1 {
     color: #444;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Description Styling */
+/* Description of the Recipe Styling */
 p {
     font-size: 1.1em;
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* Ingredients and Method Headings */
+/* Ingredients used and Step on how to make it Headings */
 h2 {
     color: #555;
     border-bottom: 2px solid #ddd;
@@ -41,14 +57,14 @@ ul li, ol li {
 
 /* Optional: Add some spacing and background to the lists */
 ul {
-    background-color: #fff;
+    background-color: #ffeb94;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 ol {
-    background-color: #fff;
+    background-color: #ffeb94;
     padding: 15px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
