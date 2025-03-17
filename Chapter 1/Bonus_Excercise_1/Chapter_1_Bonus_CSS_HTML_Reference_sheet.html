@@ -175,3 +175,160 @@
     Your browser does not support the audio element.
   &lt;/audio&gt;</code></pre>
       </div>
+      <section id="form-tags" class="tag-section">
+        <h2>Form Tags</h2>
+        
+        <h3>&lt;form&gt; - Form Container</h3>
+        <p>The form tag is used to create an HTML form for user input.</p>
+        <div class="code-container">
+          <pre><code>&lt;form action="/submit" method="post"&gt;
+      &lt;!-- Form elements go here --&gt;
+    &lt;/form&gt;</code></pre>
+        </div>
+        
+        <h3>&lt;input&gt; - Input Field</h3>
+        <p>The input tag is used to create various input controls.</p>
+        <div class="code-container">
+          <pre><code>&lt;!-- Text input --&gt;
+    &lt;input type="text" name="username" placeholder="Enter username"&gt;
+    
+    &lt;!-- Password input --&gt;
+    &lt;input type="password" name="password" placeholder="Enter password"&gt;
+    
+    &lt;!-- Email input --&gt;
+    &lt;input type="email" name="email" placeholder="Enter email"&gt;
+    
+    &lt;!-- Number input --&gt;
+    &lt;input type="number" name="age" min="18" max="100"&gt;
+    
+    &lt;!-- Checkbox --&gt;
+    &lt;input type="checkbox" name="subscribe" id="subscribe"&gt;
+    &lt;label for="subscribe"&gt;Subscribe to newsletter&lt;/label&gt;
+    
+    &lt;!-- Radio buttons --&gt;
+    &lt;input type="radio" name="gender" id="male" value="male"&gt;
+    &lt;label for="male"&gt;Male&lt;/label&gt;
+    &lt;input type="radio" name="gender" id="female" value="female"&gt;
+    &lt;label for="female"&gt;Female&lt;/label&gt;
+    
+    &lt;!-- Date input --&gt;
+    &lt;input type="date" name="birthday"&gt;
+    
+    &lt;!-- File input --&gt;
+    &lt;input type="file" name="document"&gt;
+    
+    &lt;!-- Hidden input --&gt;
+    &lt;input type="hidden" name="user_id" value="123"&gt;
+    
+    &lt;!-- Submit button --&gt;
+    &lt;input type="submit" value="Submit"&gt;</code></pre>
+        </div>
+        
+        <h3>&lt;label&gt; - Input Label</h3>
+        <p>The label tag defines a label for an input element.</p>
+        <div class="code-container">
+          <pre><code>&lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;</code></pre>
+        </div>
+        
+        <h3>&lt;select&gt; and &lt;option&gt; - Dropdown List</h3>
+        <p>The select tag creates a dropdown list, and option tags define the available options.</p>
+        <div class="code-container">
+          <pre><code>&lt;label for="country"&gt;Country:&lt;/label&gt;
+    &lt;select id="country" name="country"&gt;
+      &lt;option value=""&gt;Select a country&lt;/option&gt;
+      &lt;option value="us"&gt;United States&lt;/option&gt;
+      &lt;option value="ca"&gt;Canada&lt;/option&gt;
+      &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+    &lt;/select&gt;</code></pre>
+        </div>
+        
+        <h3>&lt;textarea&gt; - Multiline Text Input</h3>
+        <p>The textarea tag creates a multiline text input field.</p>
+        <div class="code-container">
+          <pre><code>&lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message" rows="4" cols="50"&gt;
+      Default text here...
+    &lt;/textarea&gt;</code></pre>
+        </div>
+        
+        <h3>&lt;button&gt; - Clickable Button</h3>
+        <p>The button tag creates a clickable button.</p>
+        <div class="code-container">
+          <pre><code>&lt;button type="submit"&gt;Submit Form&lt;/button&gt;
+    &lt;button type="reset"&gt;Reset Form&lt;/button&gt;
+    &lt;button type="button" onclick="alert('Hello World!')"&gt;Click Me&lt;/button&gt;</code></pre>
+        </div>
+        
+        <h3>&lt;fieldset&gt; and &lt;legend&gt; - Form Sections</h3>
+        <p>The fieldset tag groups related form elements, and the legend tag provides a caption for the fieldset.</p>
+        <div class="code-container">
+          <pre><code>&lt;fieldset&gt;
+      &lt;legend&gt;Personal Information&lt;/legend&gt;
+      &lt;label for="fname"&gt;First name:&lt;/label&gt;
+      &lt;input type="text" id="fname" name="fname"&gt;
+      &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+      &lt;input type="text" id="lname" name="lname"&gt;
+    &lt;/fieldset&gt;</code></pre>
+        </div>
+        
+        <h4>Form Example</h4>
+        <form>
+          <fieldset>
+            <legend>User Information</legend>
+            <label for="demo-name">Name:</label>
+            <input type="text" id="demo-name" name="demo-name" placeholder="Enter your name">
+            
+            <label for="demo-email">Email:</label>
+            <input type="email" id="demo-email" name="demo-email" placeholder="Enter your email">
+            
+            <label for="demo-password">Password:</label>
+            <input type="password" id="demo-password" name="demo-password">
+            
+            <label for="demo-country">Country:</label>
+            <select id="demo-country" name="demo-country">
+              <option value="">Select your country</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+            
+            <label for="demo-message">Message:</label>
+            <textarea id="demo-message" name="demo-message" rows="4" placeholder="Enter your message"></textarea>
+            
+            <div>
+              <input type="checkbox" id="demo-subscribe" name="demo-subscribe">
+              <label for="demo-subscribe" style="display: inline;">Subscribe to newsletter</label>
+            </div>
+            
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    
+      <section id="css-basics" class="property-section">
+        <h2>CSS Basics</h2>
+        
+        <h3>CSS Syntax</h3>
+        <p>CSS (Cascading Style Sheets) is used to style HTML elements. The basic syntax consists of a selector and a declaration block.</p>
+        <div class="code-container">
+          <pre><code>selector {
+      property: value;
+      property: value;
+    }</code></pre>
+        </div>
+        
+        <h3>CSS Selectors</h3>
+        <p>CSS selectors are used to target specific HTML elements for styling.</p>
+        <div class="code-container">
+          <pre><code>/* Element selector */
+    p {
+      color: blue;
+    }
+    
+    /* Class selector */
+    .highlight {
+      background-color: yellow;
+    }
+    
+    /* ID selector */
