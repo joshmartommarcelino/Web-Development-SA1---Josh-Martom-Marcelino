@@ -436,7 +436,7 @@ label {
 /* Fix input width issues */
 input:not([type="radio"]):not([type="checkbox"]),
 textarea {
-  width: 98%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ced4da;
@@ -447,7 +447,7 @@ textarea {
 /* Form Field Examples */
 input[type="text"] {
   display: block;
-  width: 100%;
+  width: 98%;
   padding: 10px;
   margin: 8px 0;
   border: 1px solid #ccc;
